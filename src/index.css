@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-cf-ink; line-height: 1.6; }
+  h1,h2,h3,h4 { letter-spacing: -0.02em; line-height: 1.1; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 font-display font-bold text-[.95rem] px-6 py-[.95rem] rounded-full cursor-pointer bg-cf-orange text-white transition;
+    box-shadow: 0 12px 30px -10px rgba(242,104,42,.6);
+  }
+  .btn-primary:hover { @apply -translate-y-0.5 bg-cf-orangeDk; }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 font-display font-bold text-[.95rem] px-6 py-[.95rem] rounded-full cursor-pointer bg-transparent text-white border-[1.5px] border-white/35 transition;
+  }
+  .btn-ghost:hover { @apply bg-white/10; }
+}
+
+/* scroll reveal */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s, transform .7s; }
+.reveal.in { opacity: 1; transform: none; }
