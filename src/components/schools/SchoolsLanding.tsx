@@ -167,7 +167,7 @@ export default function SchoolsLanding() {
     <div className="min-h-screen bg-white font-body text-cf-ink antialiased">
       <AudienceHeader
         audienceLabel="Schools"
-        activePage="audience"
+        activePage="schools"
         onLogoClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         onAboutClick={() => navigate("/")}
         onPlansClick={openPlansModal}

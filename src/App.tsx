@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import LandingSlot from "./components/LandingSlot";
 import SchoolsLanding from "./components/schools/SchoolsLanding";
+import TertiaryLanding from "./components/tertiary/TertiaryLanding";
 
 /**
  * Connect+Funda corporate SHELL — Home + About + the shared header/footer,
@@ -68,15 +69,7 @@ export default function App() {
               />
             }
           />
-          <Route
-            path="tertiary"
-            element={
-              <LandingSlot
-                title="Tertiary, TVET & SRCs"
-                blurb="The finished Tertiary & TVET partnership page mounts on this route."
-              />
-            }
-          />
+          <Route path="tertiary" element={<TertiaryLanding />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

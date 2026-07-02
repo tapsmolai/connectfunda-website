@@ -229,7 +229,7 @@ export default function SchoolsRegistrationForm({
 
     if (!validateStep(3)) return;
 
-    const scriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
+    const scriptUrl = import.meta.env.VITE_SCHOOLS_FORM_ENDPOINT;
 
     if (!scriptUrl) {
       setSubmitError(

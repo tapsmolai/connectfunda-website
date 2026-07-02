@@ -5,7 +5,7 @@ import logo from "../../assets/cf-logo.png";
 
 type AudienceHeaderProps = {
   audienceLabel: string;
-  activePage: "audience" | "about";
+  activePage: "schools" | "tertiary" | "csr" | "about";
   onLogoClick: () => void;
   onAboutClick: () => void;
   onPlansClick: () => void;
@@ -74,7 +74,11 @@ export default function AudienceHeader({
             type="button"
             onClick={handleLogoClick}
             className={
-              activePage === "audience" ? activeNavClass : inactiveNavClass
+              activePage === "schools" ||
+              activePage === "tertiary" ||
+              activePage === "csr"
+                ? activeNavClass
+                : inactiveNavClass
             }
           >
             {audienceLabel}
@@ -146,7 +150,9 @@ export default function AudienceHeader({
             type="button"
             onClick={handleLogoClick}
             className={`block w-full py-2.5 text-left font-display font-semibold transition-colors ${
-              activePage === "audience"
+              activePage === "schools" ||
+              activePage === "tertiary" ||
+              activePage === "csr"
                 ? "text-cf-orange"
                 : "text-cf-navy hover:text-cf-orange"
             }`}
