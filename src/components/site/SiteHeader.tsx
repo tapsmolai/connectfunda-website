@@ -46,6 +46,19 @@ export default function SiteHeader() {
             Home
           </NavLink>
 
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `${baseLink} ${
+                isActive
+                  ? "text-cf-orange"
+                  : "text-cf-navy hover:text-cf-orange"
+              }`
+            }
+          >
+            About Us
+          </NavLink>
+
           <div
             className="relative"
             onMouseEnter={() => setPartnerMenuOpen(true)}
@@ -98,19 +111,6 @@ export default function SiteHeader() {
               </div>
             )}
           </div>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `${baseLink} ${
-                isActive
-                  ? "text-cf-orange"
-                  : "text-cf-navy hover:text-cf-orange"
-              }`
-            }
-          >
-            About Us
-          </NavLink>
 
           <Link
             to="/#contact"

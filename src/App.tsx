@@ -9,9 +9,10 @@ import { useEffect } from "react";
 import Layout from "./components/site/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import LandingSlot from "./components/LandingSlot";
+
 import SchoolsLanding from "./components/schools/SchoolsLanding";
 import TertiaryLanding from "./components/tertiary/TertiaryLanding";
+import NpoLanding from "./components/npos/NpoLanding";
 
 /**
  * Connect+Funda corporate SHELL — Home + About + the shared header/footer,
@@ -60,15 +61,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="schools" element={<SchoolsLanding />} />
-          <Route
-            path="csr"
-            element={
-              <LandingSlot
-                title="CSR & NPOs"
-                blurb="The finished NPO & CSR partnership page mounts on this route."
-              />
-            }
-          />
+          <Route path="csr" element={<NpoLanding />} />
           <Route path="tertiary" element={<TertiaryLanding />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

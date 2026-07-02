@@ -54,7 +54,7 @@ export default function AudienceHeader({
           type="button"
           onClick={handleLogoClick}
           className="shrink-0"
-          aria-label="Go to tertiary landing page"
+          aria-label={`Go to ${audienceLabel} landing page`}
         >
           <img src={logo} alt="Connect+Funda Mobile" className="h-[50px]" />
         </button>
