@@ -25,7 +25,7 @@ export default function SiteHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-cf-line bg-white/92 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-cf-line bg-white/100 backdrop-blur-md">
       <div className="mx-auto flex h-[74px] max-w-[1180px] items-center justify-between px-6">
         <Link to="/" onClick={closeMenus}>
           <img src={logo} alt="Connect+Funda Mobile" className="h-[34px]" />

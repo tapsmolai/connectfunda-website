@@ -318,7 +318,7 @@ export default function Home() {
               {founders.map((f) => (
                 <div
                   key={f.i}
-                  className="flex items-center gap-2.5 bg-cf-navyInk border border-white/8 rounded-[12px] px-3.5 py-2.5"
+                  className="flex items-center gap-2.5 bg-cf-navyInk border border-white/10 rounded-[12px] px-3.5 py-2.5"
                 >
                   <div
                     className={`w-[38px] h-[38px] rounded-[9px] flex items-center justify-center font-display font-extrabold text-[.82rem] text-white ${f.o ? "bg-cf-orange" : "bg-cf-orange/85"}`}
@@ -341,11 +341,11 @@ export default function Home() {
               Meet the full team →
             </Link>
           </div>
-          <div className="reveal bg-cf-navyInk border border-white/8 rounded-[20px] p-[30px]">
+          <div className="reveal bg-cf-navyInk border border-white/30 rounded-[20px] p-[30px]">
             {facts.map(([k, v], idx) => (
               <div
                 key={k}
-                className={`flex justify-between items-baseline py-3.5 ${idx < facts.length - 1 ? "border-b border-white/9" : ""}`}
+                className={`flex justify-between items-baseline py-3.5 ${idx < facts.length - 1 ? "border-b border-white/20" : ""}`}
               >
                 <span className="text-[#9AA6B5] text-[.86rem]">{k}</span>
                 <b className="font-display font-extrabold text-white text-[1.05rem] text-right max-w-[60%]">

@@ -107,7 +107,7 @@ export default function SiteFooter() {
             </ul>
           </div>
         </div>
-        <div className="mt-[42px] pt-[22px] border-t border-white/8 flex justify-between flex-wrap gap-3 text-[.78rem] text-[#7A8493]">
+        <div className="mt-[42px] pt-[22px] border-t border-white/30 flex justify-between flex-wrap gap-3 text-[.78rem] text-[#7A8493]">
           <span>© 2026 Connect+Funda Mobile. All rights reserved.</span>
           <span>
             Enthucate Tech (Pty) Ltd · Reg. 2022/777919/07 · trading as
